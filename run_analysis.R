@@ -116,4 +116,4 @@ data.tidy <- data.final[filter,]
 data.tidy <- dcast(data.tidy, subject + label ~ variable, mean)
 
 ## Creates and output txt file with tidy data
-write.table(data.tidy, file = "tidy_data.txt")
+write.table(data.tidy, file = "tidy_data.txt", row.names = FALSE)
